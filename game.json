@@ -1,0 +1,267 @@
+{
+  "firstLayout": "Title Screen",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.ascension.wienerwizard.sausage",
+    "pixelsRounding": false,
+    "projectUuid": "f520dd35-8a3c-4ab5-97c5-df54808cf947",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Sau'Sage: Ascension of the Wiener Wizard",
+    "description": "",
+    "author": "Sausage Factory, Inc",
+    "windowWidth": 800,
+    "windowHeight": 600,
+    "latestCompilationDirectory": "/Users/lou/Documents/git/okSausage/export",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "authorIds": [
+      "m4WAHAfWjxdX3gweyc3gYzqO5OA2"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [
+      {
+        "extension": "Firebase",
+        "property": "FirebaseConfig",
+        "value": "{\n  apiKey: \"AIzaSyAbHx3jqwYnanwawRJ3PFOP6dcDjM7QJzg\",\n  authDomain: \"sausage-ascension.firebaseapp.com\",\n  projectId: \"sausage-ascension\",\n  storageBucket: \"sausage-ascension.appspot.com\",\n  messagingSenderId: \"514973495849\",\n  appId: \"1:514973495849:web:912f57976d3f6104c6a238\",\n  measurementId: \"G-5ERFNLTZWG\"\n}"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "MedievalSharp-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "MedievalSharp-Regular.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Castles Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Castles Background.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Generic Backgrounds/tiled_Castles Background.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Large Play Button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Large Play Button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Interface/Casual Buttons Pack/Large Play Button.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Menu Button_Active.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Menu Button_Active.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/UI/Menu Button_Active.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Menu Button_Default.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Menu Button_Default.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/Pixel Platformer Pack/UI/Menu Button_Default.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/GDevelop red hero.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GDevelop red hero.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://resources.gdevelop-app.com/assets/GDevelop/GDevelop red hero.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "mountain_background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "mountain_background.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "login_box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "login_box.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_options.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_options.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button.plsy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button.plsy.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_options2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_options2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button.plsy2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button.plsy2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_options3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_options3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button.plsy3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button.plsy3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Desktop/Sausages/buttons/button.plsy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../../../Desktop/Sausages/buttons/button.plsy.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "login_screen_close_button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "login_screen_close_button.png",
+        "smoothed": true,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/title-screen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/login"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/credits"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/popup"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/camerashake"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/alignobject"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}

@@ -1,0 +1,333 @@
+{
+  "b": 0,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Credits",
+  "name": "Credits",
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 0,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 0,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.7123999999999876,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 119,
+      "layer": "Title Text",
+      "locked": false,
+      "name": "Title_SauSage",
+      "persistentUuid": "37929237-9af6-4fee-8bb4-e95c05654a76",
+      "width": 437,
+      "x": 680.6521606445312,
+      "y": -151.5902862548828,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 118,
+      "layer": "Title Text",
+      "locked": false,
+      "name": "Title_Ascension",
+      "persistentUuid": "5fc3e0d0-6e13-494e-93a1-985875577c97",
+      "width": 437,
+      "x": 693.6521606445312,
+      "y": -9.59028434753418,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 119,
+      "layer": "Title Text",
+      "locked": false,
+      "name": "Title_SauSage",
+      "persistentUuid": "b7896cb6-0490-4a26-bab1-81d8a843ce29",
+      "width": 437,
+      "x": -229.19007873535156,
+      "y": -150.02545166015625,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "TItle",
+      "locked": false,
+      "name": "SauSage",
+      "persistentUuid": "24e29c9d-c3cc-489b-8179-ad9122b0ffec",
+      "width": 0,
+      "x": 42,
+      "y": -130,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "TItle",
+      "locked": false,
+      "name": "Ascension",
+      "persistentUuid": "afe9e0e7-86f2-40d8-91fd-b4e77fe304ec",
+      "width": 0,
+      "x": -26,
+      "y": -81,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "locked": false,
+      "name": "Credits",
+      "persistentUuid": "f0e1a806-72e5-4d7c-bd36-f95cab5aa818",
+      "width": 0,
+      "x": -469,
+      "y": 132,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "SauSage",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "DropShadow",
+          "name": "SauSageDropShadow",
+          "doubleParameters": {
+            "alpha": 1,
+            "blur": 0,
+            "distance": 3,
+            "padding": 0,
+            "quality": 3,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "color": "74;74;74"
+          },
+          "booleanParameters": {
+            "shadowOnly": false
+          }
+        }
+      ],
+      "behaviors": [],
+      "string": "Sau'Sage",
+      "font": "MedievalSharp-Regular.ttf",
+      "characterSize": 40,
+      "color": {
+        "b": 27,
+        "g": 2,
+        "r": 208
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Ascension",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Ascension of the Wiener Wizard",
+      "font": "MedievalSharp-Regular.ttf",
+      "characterSize": 20,
+      "color": {
+        "b": 27,
+        "g": 2,
+        "r": 208
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Credits",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "This sausage was made in the Sausage Factory.\n\nConcept, development, storyboard: someguynamedlou\n\nArtwork Credits:\n",
+      "font": "MedievalSharp-Regular.ttf",
+      "characterSize": 16,
+      "color": {
+        "b": 226,
+        "g": 144,
+        "r": 74
+      }
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Title\""
+          ]
+        },
+        {
+          "type": {
+            "value": "AlignObject::ToSceneCenter"
+          },
+          "parameters": [
+            "",
+            "SauSage",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AlignObject::ToSceneTop"
+          },
+          "parameters": [
+            "",
+            "SauSage",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AlignObject::ToScreenCenter"
+          },
+          "parameters": [
+            "",
+            "Ascension",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Ascension",
+            "=",
+            "SauSage.BoundingBoxBottom()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "Credits",
+            "=",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "Credits",
+            "=",
+            "Ascension.BoundingBoxBottom() + 20"
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 0,
+      "ambientLightColorG": 150995054,
+      "ambientLightColorR": 1869182049,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 8118696,
+      "ambientLightColorG": 6043312,
+      "ambientLightColorR": 8180960,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "TItle",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": []
+}
