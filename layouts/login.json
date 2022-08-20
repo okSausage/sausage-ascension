@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.5696000000000003,
+    "zoomFactor": 0.9768000000000001,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -32,45 +32,12 @@
       "customSize": true,
       "height": 601,
       "layer": "",
-      "locked": false,
       "name": "LoginBox",
       "persistentUuid": "fec0a4ce-9f9e-4223-873b-2884f243aa42",
       "width": 735.4473876953125,
       "x": 35.5526123046875,
       "y": 1,
       "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "Input layer",
-      "locked": true,
-      "name": "Button_Play",
-      "persistentUuid": "9a442ed8-1cc6-46bc-91ef-19006b8cc2ba",
-      "width": 195,
-      "x": 519,
-      "y": 483,
-      "zOrder": 6,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 40,
-      "layer": "Input layer",
-      "locked": true,
-      "name": "Button_Options",
-      "persistentUuid": "7059a3cd-c438-4617-bff0-433bc395a034",
-      "width": 195,
-      "x": 83.5625,
-      "y": 483,
-      "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -119,6 +86,69 @@
       "x": 721,
       "y": 81,
       "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 601,
+      "layer": "",
+      "locked": true,
+      "name": "LoginBox",
+      "persistentUuid": "0a07e021-951d-4700-8f5c-ef7814b88875",
+      "width": 735.4473876953125,
+      "x": 35.5526123046875,
+      "y": 1,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "Input layer",
+      "locked": true,
+      "name": "Button_Sign_In",
+      "persistentUuid": "2f6114f1-f719-4cbe-bf6b-4aaa7e44ef48",
+      "width": 195,
+      "x": 519,
+      "y": 483,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 40,
+      "layer": "Input layer",
+      "locked": true,
+      "name": "button_Create_Account",
+      "persistentUuid": "cff9760e-6f63-49ab-8945-546db4aa828b",
+      "width": 195,
+      "x": 83,
+      "y": 483,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 600,
+      "layer": "",
+      "name": "Background",
+      "persistentUuid": "f0c373d9-7653-47e7-88c3-b06e93ef88f2",
+      "width": 800,
+      "x": 0,
+      "y": 0,
+      "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -216,98 +246,6 @@
     },
     {
       "assetStoreId": "",
-      "name": "Button_Play",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "button.plsy2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "name": "Button_Options",
-      "tags": "",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "button_options3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
       "name": "Button_Exit",
       "tags": "",
       "type": "Sprite",
@@ -346,6 +284,148 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Button_Sign_In",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "button_sign_in.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "button_Create_Account",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "button_create_account.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Background",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "mountain_background.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "TextEntry_Listener",
+      "tags": "",
+      "type": "TextEntryObject::TextEntry",
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "events": [
@@ -354,10 +434,190 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Play Button Click Events",
+      "folded": true,
+      "name": "Initialization",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Firebase::AnalyticsEnable"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "Firebase::EnablePerformance"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Background Mountains\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Input layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Background",
+                "=",
+                "100"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Firebase::IsSignedIn"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Character Selection\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Firebase::IsSignedIn"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Background Mountains\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Input layer\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Sign In Button Click Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::Text"
+              },
+              "parameters": [
+                "Email",
+                "!=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::Text"
+              },
+              "parameters": [
+                "Password",
+                "!=",
+                "\"\""
+              ]
+            }
+          ],
+          "actions": []
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -375,7 +635,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Button_Play",
+                "Button_Sign_In",
                 "",
                 "",
                 ""
@@ -394,10 +654,10 @@
                 "value": "Tween::AddObjectScaleXTween"
               },
               "parameters": [
-                "Button_Play",
+                "Button_Sign_In",
                 "Tween",
                 "\"LeftMouseClickPlay-X\"",
-                "Button_Play.ScaleX()+.025",
+                "Button_Sign_In.ScaleX()+.025",
                 "\"linear\"",
                 ".250",
                 "",
@@ -409,72 +669,10 @@
                 "value": "Tween::AddObjectScaleYTween"
               },
               "parameters": [
-                "Button_Play",
+                "Button_Sign_In",
                 "Tween",
                 "\"LeftMouseClickPlay-Y\"",
-                "Button_Play.ScaleY()+.025",
-                "\"linear\"\n",
-                ".250",
-                "500",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "Height"
-              },
-              "parameters": [
-                "Button_Play",
-                ">",
-                "40"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::AddObjectScaleXTween"
-              },
-              "parameters": [
-                "Button_Play",
-                "Tween",
-                "\"LeftMouseReleasePlay-X\"",
-                "Button_Play.ScaleX()-.025",
-                "\"linear\"",
-                ".250",
-                "",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::AddObjectScaleYTween"
-              },
-              "parameters": [
-                "Button_Play",
-                "Tween",
-                "\"LeftMouseReleasePlay-Y\"",
-                "Button_Play.ScaleY()-.025",
+                "Button_Sign_In.ScaleY()+.025",
                 "\"linear\"\n",
                 ".250",
                 "500",
@@ -494,36 +692,141 @@
               "subInstructions": [
                 {
                   "type": {
-                    "value": "TextInput::TextInputObject::Text"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "Password",
-                    "=",
-                    "\"\""
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Height"
+                      },
+                      "parameters": [
+                        "Button_Sign_In",
+                        ">",
+                        "40"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
                   ]
                 },
                 {
                   "type": {
-                    "value": "TextInput::TextInputObject::Text"
+                    "value": "KeyPressed"
                   },
                   "parameters": [
-                    "Email",
-                    "=",
-                    "\"\""
+                    "",
+                    "Return"
                   ]
                 }
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "PopUp::Alert"
+                "value": "Tween::AddObjectScaleXTween"
               },
               "parameters": [
+                "Button_Sign_In",
+                "Tween",
+                "\"LeftMouseReleasePlay-X\"",
+                "Button_Sign_In.ScaleX()-.025",
+                "\"linear\"",
+                ".250",
                 "",
-                "\"Email and/or password is blank.  You must sign in to play the game.  How else would we store your progress?\"",
-                ""
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Button_Sign_In",
+                "Tween",
+                "\"LeftMouseReleasePlay-Y\"",
+                "Button_Sign_In.ScaleY()-.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Password",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Email",
+                        "=",
+                        "\"\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopUp::Alert"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Email and/or password is blank.  You must sign in to play the game.  How else would we store your progress?\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Firebase::BasicAccountSignIn"
+                  },
+                  "parameters": [
+                    "Email.Text()",
+                    "Password.Text()",
+                    "result"
+                  ]
+                }
               ]
             }
           ]
@@ -537,7 +840,7 @@
       "colorR": 74,
       "creationTime": 0,
       "folded": true,
-      "name": "Options Button Click Events",
+      "name": "Create Account Button Click Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -558,7 +861,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Button_Options",
+                "button_Create_Account",
                 "",
                 "",
                 ""
@@ -577,10 +880,10 @@
                 "value": "Tween::AddObjectScaleXTween"
               },
               "parameters": [
-                "Button_Options",
+                "button_Create_Account",
                 "Tween",
                 "\"LeftMouseClickPlay-X\"",
-                "Button_Options.ScaleX()+.025",
+                "button_Create_Account.ScaleX()+.025",
                 "\"linear\"",
                 ".250",
                 "",
@@ -592,10 +895,10 @@
                 "value": "Tween::AddObjectScaleYTween"
               },
               "parameters": [
-                "Button_Options",
+                "button_Create_Account",
                 "Tween",
                 "\"LeftMouseClickPlay-Y\"",
-                "Button_Options.ScaleY()+.025",
+                "button_Create_Account.ScaleY()+.025",
                 "\"linear\"\n",
                 ".250",
                 "500",
@@ -621,7 +924,7 @@
                 "value": "Height"
               },
               "parameters": [
-                "Button_Options",
+                "button_Create_Account",
                 ">",
                 "40"
               ]
@@ -639,10 +942,10 @@
                 "value": "Tween::AddObjectScaleXTween"
               },
               "parameters": [
-                "Button_Options",
+                "button_Create_Account",
                 "Tween",
                 "\"LeftMouseReleasePlay-X\"",
-                "Button_Options.ScaleX()-.025",
+                "button_Create_Account.ScaleX()-.025",
                 "\"linear\"",
                 ".250",
                 "",
@@ -654,24 +957,32 @@
                 "value": "Tween::AddObjectScaleYTween"
               },
               "parameters": [
-                "Button_Options",
+                "button_Create_Account",
                 "Tween",
                 "\"LeftMouseReleasePlay-Y\"",
-                "Button_Options.ScaleY()-.025",
+                "button_Create_Account.ScaleY()-.025",
                 "\"linear\"\n",
                 ".250",
                 "500",
                 "yes"
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "PopUp::Alert"
-              },
-              "parameters": [
-                "",
-                "\"If you are looking for options you're out of luck.  There are no options yet.  Maybe there won't be any.  I don't know right now.  Nobody knows...\n\nI suppose this is not entirely true.\nI guess you have one option.\n\nPlay the game.\"",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Create an Account\"",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -799,6 +1110,17 @@
     }
   ],
   "layers": [
+    {
+      "ambientLightColorB": 8692352,
+      "ambientLightColorG": 6043312,
+      "ambientLightColorR": 8617080,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Background Mountains",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
     {
       "ambientLightColorB": 8311856,
       "ambientLightColorG": 0,

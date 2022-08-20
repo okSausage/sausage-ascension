@@ -1,0 +1,1438 @@
+{
+  "b": 0,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Create_32an_32Account",
+  "name": "Create an Account",
+  "oglFOV": 90,
+  "oglZFar": 500,
+  "oglZNear": 1,
+  "r": 0,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "Create an Account",
+  "v": 0,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 1.5940000000000007,
+    "windowMask": false
+  },
+  "objectsGroups": [
+    {
+      "name": "Header",
+      "objects": [
+        {
+          "name": "Registration_Header"
+        },
+        {
+          "name": "Registration_Header_Shadow"
+        }
+      ]
+    }
+  ],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 601,
+      "layer": "",
+      "name": "Background_Mountains",
+      "persistentUuid": "914e1cd4-c55d-4832-80d6-967be5e8913b",
+      "width": 800,
+      "x": 0,
+      "y": -1,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 531,
+      "layer": "",
+      "name": "Scroll",
+      "persistentUuid": "915064f0-b010-4e0b-8860-05a08ab45667",
+      "width": 553,
+      "x": 117,
+      "y": 35,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 45,
+      "layer": "Input Layer",
+      "name": "Email",
+      "persistentUuid": "52bcf3cc-f24e-44dd-87d0-e06f218cddc2",
+      "width": 335,
+      "x": 222,
+      "y": 174,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Your Email Address"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 45,
+      "layer": "Input Layer",
+      "name": "Password",
+      "persistentUuid": "9ad60374-1960-422a-b315-3f525904ef6b",
+      "width": 335,
+      "x": 221,
+      "y": 233,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Password"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 45,
+      "layer": "Input Layer",
+      "name": "Password2",
+      "persistentUuid": "f95016b3-e607-4dd2-838e-276d3655f347",
+      "width": 335,
+      "x": 220,
+      "y": 289,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "placeholder",
+          "value": "Confirm Password"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Submit_Button",
+      "persistentUuid": "c19b8134-0050-4a81-a7cf-fba265748ddc",
+      "width": 0,
+      "x": 249,
+      "y": 369,
+      "zOrder": 13,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Submit_Info",
+      "persistentUuid": "2ba60900-0621-492e-9c8c-7311b79bdea1",
+      "width": 0,
+      "x": 260,
+      "y": 444,
+      "zOrder": 14,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Registration_Header",
+      "persistentUuid": "dbe72c85-c69d-4bb7-9ef6-20f60261a149",
+      "width": 0,
+      "x": 184,
+      "y": 107,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Registration_Header_Shadow",
+      "persistentUuid": "e0738d52-466e-41e4-9a98-8de276f91dd4",
+      "width": 0,
+      "x": 182,
+      "y": 109,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "Back_Button",
+      "persistentUuid": "c4725463-8da7-4d92-9b17-33108a095f33",
+      "width": 0,
+      "x": 3,
+      "y": 3,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "name": "Email",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Your Email",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "email",
+        "textColor": "245;166;35",
+        "fillColor": "0;0;0",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Password",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Your Email",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "password",
+        "textColor": "245;166;35",
+        "fillColor": "0;0;0",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Password2",
+      "tags": "",
+      "type": "TextInput::TextInputObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "initialValue": "",
+        "placeholder": "Your Email",
+        "fontResourceName": "",
+        "fontSize": 20,
+        "inputType": "password",
+        "textColor": "245;166;35",
+        "fillColor": "0;0;0",
+        "fillOpacity": 255,
+        "borderColor": "0;0;0",
+        "borderOpacity": 255,
+        "borderWidth": 1,
+        "readOnly": false,
+        "disabled": false
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Background_Mountains",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "mountain_background.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Scroll",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "empty_scroll.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Registration_Header_Shadow",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Register a New Account",
+      "font": "MedievalSharp-Regular.ttf",
+      "characterSize": 40,
+      "color": {
+        "b": 74,
+        "g": 74,
+        "r": 74
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Registration_Header",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Register a New Account",
+      "font": "MedievalSharp-Regular.ttf",
+      "characterSize": 40,
+      "color": {
+        "b": 23,
+        "g": 0,
+        "r": 185
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Submit_Button",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "button_register.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": true,
+      "name": "Submit_Info",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Create a new user and move on to the character creation screen.",
+      "font": "",
+      "characterSize": 10,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "Back_Button",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Return to the Login Screen",
+      "font": "",
+      "characterSize": 12,
+      "color": {
+        "b": 28,
+        "g": 231,
+        "r": 248
+      }
+    }
+  ],
+  "events": [
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Initialization Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Background_Mountains",
+                "=",
+                "100"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Firebase::IsSignedIn"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PopUp::Confirm"
+              },
+              "parameters": [
+                "",
+                "\"You are already logged in!\n\nProceeding will log you out of your current session.\n\nContinue and log out?\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "__Popup.Confirm",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopUp::Alert"
+                  },
+                  "parameters": [
+                    "",
+                    "\"confirmed\"",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCentered"
+              },
+              "parameters": [
+                "",
+                "Scroll",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Email",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Password",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Password2",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Header",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Submit_Info",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Submit_Button",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "validation_passed",
+                "True"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Back Button Click Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Back_Button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::SetItalic"
+              },
+              "parameters": [
+                "Back_Button",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Back_Button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::SetItalic"
+              },
+              "parameters": [
+                "Back_Button",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Back_Button",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Login\"",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Register Button Click Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Submit_Button",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Submit_Button",
+                "Tween",
+                "\"LeftMouseClickPlay-X\"",
+                "Submit_Button.ScaleX()+.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Submit_Button",
+                "Tween",
+                "\"LeftMouseClickPlay-Y\"",
+                "Submit_Button.ScaleY()+.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "Height"
+              },
+              "parameters": [
+                "Submit_Button",
+                ">",
+                "40"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Submit_Button",
+                "Tween",
+                "\"LeftMouseReleasePlay-X\"",
+                "Submit_Button.ScaleX()-.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Submit_Button",
+                "Tween",
+                "\"LeftMouseReleasePlay-Y\"",
+                "Submit_Button.ScaleY()-.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Firebase::IsSignedIn"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopUp::Alert"
+                  },
+                  "parameters": [
+                    "",
+                    "\"This is strange.  You should not have been able to navigate to this page at all because you're already signed in.\n\nAlerting the developer and bouncing you back to the login page.\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Login\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Form Validation Events",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Email",
+                        "\"0;0;0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Password",
+                        "\"0;0;0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Password2",
+                        "\"0;0;0\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "validation_passed",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Email",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Email",
+                        "\"208;2;27\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "validation_passed",
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "InputValidation::IsValidEmail"
+                      },
+                      "parameters": [
+                        "",
+                        "Email.Text()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Email",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Email",
+                        "\"208;2;27\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PopUp::Alert"
+                      },
+                      "parameters": [
+                        "",
+                        "\"You must enter a valid email.\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "validation_passed",
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Password",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Password",
+                        "\"208;2;27\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "validation_passed",
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Password2",
+                        "=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Password2",
+                        "\"208;2;27\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "validation_passed",
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Password",
+                        "!=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::Text"
+                      },
+                      "parameters": [
+                        "Password2",
+                        "!=",
+                        "\"\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareStrings"
+                      },
+                      "parameters": [
+                        "Password.Text()",
+                        "!=",
+                        "Password2.Text()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PopUp::Alert"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Passwords do not match.\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Password",
+                        "\"208;2;27\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextInput::TextInputObject::SetFillColor"
+                      },
+                      "parameters": [
+                        "Password2",
+                        "\"208;2;27\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "validation_passed",
+                        "False"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Submit Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "validation_passed",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Submit_Button",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Firebase::CreateBasicAccount"
+              },
+              "parameters": [
+                "Email.Text()",
+                "Password.Text()",
+                "cb_status"
+              ]
+            },
+            {
+              "type": {
+                "value": "PopUp::Alert"
+              },
+              "parameters": [
+                "",
+                "\"saving\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 8542560,
+      "ambientLightColorG": 0,
+      "ambientLightColorR": 0,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 167797870,
+      "ambientLightColorG": 6043312,
+      "ambientLightColorR": 7391992,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Input Layer",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}
