@@ -1,0 +1,12 @@
+{
+  "name": "Sau'Sage: Ascension of the Wiener Wizard",
+  "short_name": "Sau'Sage: Ascension of the Wiener Wizard",
+  "id": "com.ascension.wienerwizard.sausage",
+  "description": "",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}

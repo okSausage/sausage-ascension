@@ -676,7 +676,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Initialization Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -700,16 +699,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetGameResolutionSize"
-              },
-              "parameters": [
-                "",
-                "ScreenWidth()",
-                "ScreenHeight()"
-              ]
-            },
             {
               "type": {
                 "value": "Opacity"
