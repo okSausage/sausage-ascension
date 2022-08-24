@@ -152,6 +152,60 @@
         "name": "sausage_6.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "character_selection-base_layer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character_selection-base_layer.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "character_selection-warlock_text.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character_selection-warlock_text.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "character_selection-wizard_text.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character_selection-wizard_text.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "character_selection_small_box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "character_selection_small_box.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sausage_1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sausage_1-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sausage_6-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sausage_6-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

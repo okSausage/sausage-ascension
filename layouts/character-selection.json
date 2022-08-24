@@ -12,7 +12,7 @@
   "title": "Character Selection",
   "v": 0,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -20,8 +20,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 1,
+    "snap": true,
+    "zoomFactor": 1.6924000000000003,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -45,29 +45,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 411.91998291015625,
-      "layer": "",
+      "height": 236,
+      "layer": "Warlock",
       "name": "Wiener_Warlock",
       "persistentUuid": "f8d0cba7-2a3a-451f-8ede-1b09a1a5a5f6",
-      "width": 228,
-      "x": -241,
-      "y": 8,
+      "width": 132,
+      "x": 415,
+      "y": 250,
       "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Wiener_Wizard",
-      "persistentUuid": "afe077d3-42c7-4c73-aca5-e724b8be3a9c",
-      "width": 0,
-      "x": 857,
-      "y": 32,
-      "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -84,6 +69,128 @@
       "x": 0,
       "y": 0,
       "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 581.560302734375,
+      "layer": "",
+      "locked": true,
+      "name": "Base_Layer",
+      "persistentUuid": "cb363075-9f75-45fb-83f0-e1f93998d163",
+      "width": 615,
+      "x": 94,
+      "y": 9.439697265625,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "Wizard",
+      "name": "Text_Wizard",
+      "persistentUuid": "6288c76d-fcd3-45ba-a993-9c95f12f4748",
+      "width": 0,
+      "x": 438,
+      "y": 193,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 29.844961166381836,
+      "layer": "Warlock",
+      "locked": true,
+      "name": "Text_Warlock",
+      "persistentUuid": "5664cb95-2910-4e38-99b3-377770f1384a",
+      "width": 110,
+      "x": 434,
+      "y": 193.15504455566406,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 232.04420471191406,
+      "layer": "Wizard",
+      "name": "Wiener_Wizard",
+      "persistentUuid": "53de8b59-be1c-4ee2-9790-8d6457845885",
+      "width": 105,
+      "x": 448,
+      "y": 250.95579528808594,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 100,
+      "layer": "",
+      "name": "Warlock_Character_Box",
+      "persistentUuid": "dccd425e-2c5a-44de-9b2e-4183072caa81",
+      "width": 100,
+      "x": 192,
+      "y": 350,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 100,
+      "layer": "",
+      "name": "Wizard_Character_Box",
+      "persistentUuid": "fc89963a-426b-4659-815d-9047a7de784d",
+      "width": 100,
+      "x": 192,
+      "y": 224,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 65,
+      "layer": "",
+      "name": "Small_Wiener_Warlock",
+      "persistentUuid": "9b070a58-11ad-49b4-8083-31152043e8ca",
+      "width": 78,
+      "x": 196,
+      "y": 372,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "layer": "",
+      "name": "Small_Wiener_Wizard",
+      "persistentUuid": "7af323ba-86ca-4324-b210-0f668c4bab02",
+      "width": 59.71133804321289,
+      "x": 217,
+      "y": 248,
+      "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -175,6 +282,52 @@
     },
     {
       "assetStoreId": "",
+      "name": "Small_Wiener_Warlock",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "sausage_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "sausage_1-1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
       "name": "Wiener_Wizard",
       "tags": "",
       "type": "Sprite",
@@ -194,6 +347,52 @@
                 {
                   "hasCustomCollisionMask": false,
                   "image": "sausage_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Small_Wiener_Wizard",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "sausage_6",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.07999999821186066,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "sausage_6-1.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -254,6 +453,221 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Base_Layer",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "character_selection-base_layer.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Text_Warlock",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "character_selection-warlock_text.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Text_Wizard",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "character_selection-wizard_text.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Wizard_Character_Box",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "character_selection_small_box.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Warlock_Character_Box",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "character_selection_small_box.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -286,6 +700,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetGameResolutionSize"
+              },
+              "parameters": [
+                "",
+                "ScreenWidth()",
+                "ScreenHeight()"
+              ]
+            },
             {
               "type": {
                 "value": "Opacity"
@@ -411,6 +835,447 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Character Box Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Wizard_Character_Box",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Wizard_Character_Box",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-X\"",
+                "Wizard_Character_Box.ScaleX()+.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Wizard_Character_Box",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-Y\"",
+                "Wizard_Character_Box.ScaleY()+.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Small_Wiener_Wizard",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-X\"",
+                "Small_Wiener_Wizard.ScaleX()+.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Small_Wiener_Wizard",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-Y\"",
+                "Small_Wiener_Wizard.ScaleY()+.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Wizard_Character_Box",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Warlock\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Wizard\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Wizard_Character_Box",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Wizard_Character_Box",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-X\"",
+                "Wizard_Character_Box.ScaleX()-.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Wizard_Character_Box",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-Y\"",
+                "Wizard_Character_Box.ScaleY()-.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Small_Wiener_Wizard",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-Y\"",
+                "Small_Wiener_Wizard.ScaleY()-.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Small_Wiener_Wizard",
+                "Tween",
+                "\"MouseOverWizardCharacterBox-X\"",
+                "Small_Wiener_Wizard.ScaleX()-.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Warlock_Character_Box",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Warlock_Character_Box",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-X\"",
+                "Warlock_Character_Box.ScaleX()+.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Warlock_Character_Box",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-Y\"",
+                "Warlock_Character_Box.ScaleY()+.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Small_Wiener_Warlock",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-X\"",
+                "Small_Wiener_Warlock.ScaleX()+.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Small_Wiener_Warlock",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-Y\"",
+                "Small_Wiener_Warlock.ScaleY()+.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Warlock_Character_Box",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Warlock_Character_Box",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-X\"",
+                "Warlock_Character_Box.ScaleX()-.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Warlock_Character_Box",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-Y\"",
+                "Warlock_Character_Box.ScaleY()-.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Small_Wiener_Warlock",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-Y\"",
+                "Small_Wiener_Warlock.ScaleY()-.025",
+                "\"linear\"\n",
+                ".250",
+                "500",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Small_Wiener_Warlock",
+                "Tween",
+                "\"MouseOverWarlockCharacterBox-X\"",
+                "Small_Wiener_Warlock.ScaleX()-.025",
+                "\"linear\"",
+                ".250",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Warlock_Character_Box",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Wizard\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"Warlock\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -446,7 +1311,34 @@
       "visibility": true,
       "cameras": [],
       "effects": []
+    },
+    {
+      "ambientLightColorB": 8298152,
+      "ambientLightColorG": 6043600,
+      "ambientLightColorR": 8056160,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Warlock",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 8298152,
+      "ambientLightColorG": 6043600,
+      "ambientLightColorR": 8056160,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "name": "Wizard",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
     }
   ],
-  "behaviorsSharedData": []
+  "behaviorsSharedData": [
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
 }

@@ -511,9 +511,25 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetGameResolutionSize"
+              },
+              "parameters": [
+                "",
+                "ScreenWidth()",
+                "ScreenHeight()"
+              ]
+            },
             {
               "type": {
                 "value": "Opacity"
@@ -523,91 +539,29 @@
                 "=",
                 "100"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "DepartScene"
+                "value": "ModVarObjet"
               },
               "parameters": [
-                ""
+                "Submit_Button",
+                "scale.x",
+                "=",
+                "Submit_Button.ScaleX()"
               ]
             },
             {
               "type": {
-                "value": "Firebase::IsSignedIn"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PopUp::Confirm"
+                "value": "ModVarObjet"
               },
               "parameters": [
-                "",
-                "\"You are already logged in!\n\nProceeding will log you out of your current session.\n\nContinue and log out?\"",
-                ""
+                "Submit_Button",
+                "scale.y",
+                "=",
+                "Submit_Button.ScaleY()"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "__Popup.Confirm",
-                    "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PopUp::Alert"
-                  },
-                  "parameters": [
-                    "",
-                    "\"confirmed\"",
-                    ""
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
                 "value": "AlignObject::ToSceneCentered"
@@ -615,6 +569,16 @@
               "parameters": [
                 "",
                 "Scroll",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AlignObject::ToSceneCenter"
+              },
+              "parameters": [
+                "",
+                "Password2",
                 ""
               ]
             },
@@ -635,16 +599,6 @@
               "parameters": [
                 "",
                 "Password",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "AlignObject::ToSceneCenter"
-              },
-              "parameters": [
-                "",
-                "Password2",
                 ""
               ]
             },
@@ -685,6 +639,71 @@
               "parameters": [
                 "validation_passed",
                 "True"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Firebase::IsSignedIn"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopUp::Confirm"
+                  },
+                  "parameters": [
+                    "",
+                    "\"You are already logged in!\n\nProceeding will log you out of your current session.\n\nContinue and log out?\"",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "__Popup.Confirm",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PopUp::Alert"
+                      },
+                      "parameters": [
+                        "",
+                        "\"confirmed\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -761,7 +780,7 @@
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonPressed"
+                "value": "MouseButtonReleased"
               },
               "parameters": [
                 "",
@@ -850,7 +869,7 @@
                 "Submit_Button",
                 "Tween",
                 "\"LeftMouseClickPlay-X\"",
-                "Submit_Button.ScaleX()+.025",
+                "Submit_Button.Variable(scale.x) + .025",
                 "\"linear\"",
                 ".250",
                 "",
@@ -865,7 +884,7 @@
                 "Submit_Button",
                 "Tween",
                 "\"LeftMouseClickPlay-Y\"",
-                "Submit_Button.ScaleY()+.025",
+                "Submit_Button.Variable(scale.y) + .025",
                 "\"linear\"\n",
                 ".250",
                 "500",
@@ -912,7 +931,7 @@
                 "Submit_Button",
                 "Tween",
                 "\"LeftMouseReleasePlay-X\"",
-                "Submit_Button.ScaleX()-.025",
+                "Submit_Button.Variable(scale.x)",
                 "\"linear\"",
                 ".250",
                 "",
@@ -927,7 +946,7 @@
                 "Submit_Button",
                 "Tween",
                 "\"LeftMouseReleasePlay-Y\"",
-                "Submit_Button.ScaleY()-.025",
+                "Submit_Button.Variable(scale.y)",
                 "\"linear\"\n",
                 ".250",
                 "500",
@@ -1335,22 +1354,47 @@
             },
             {
               "type": {
-                "value": "MouseButtonReleased"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Submit_Button",
-                "",
-                "",
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Submit_Button",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Return"
+                  ]
+                }
               ]
             },
             {

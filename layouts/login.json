@@ -9,7 +9,7 @@
   "r": 0,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
-  "title": "",
+  "title": "Login to your Account",
   "v": 0,
   "uiSettings": {
     "grid": false,
@@ -434,7 +434,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Initialization",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -449,9 +448,25 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetGameResolutionSize"
+              },
+              "parameters": [
+                "",
+                "ScreenWidth()",
+                "ScreenHeight()"
+              ]
+            },
             {
               "type": {
                 "value": "Firebase::AnalyticsEnable"
@@ -499,6 +514,50 @@
                 "Background",
                 "=",
                 "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Button_Sign_In",
+                "scale.x",
+                "=",
+                "Button_Sign_In.ScaleX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Button_Sign_In",
+                "scale.y",
+                "=",
+                "Button_Sign_In.ScaleY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "button_Create_Account",
+                "scale.x",
+                "=",
+                "Button_Sign_In.ScaleX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "button_Create_Account",
+                "scale.y",
+                "=",
+                "Button_Sign_In.ScaleY()"
               ]
             }
           ]
@@ -587,37 +646,10 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Sign In Button Click Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "TextInput::TextInputObject::Text"
-              },
-              "parameters": [
-                "Email",
-                "!=",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextInput::TextInputObject::Text"
-              },
-              "parameters": [
-                "Password",
-                "!=",
-                "\"\""
-              ]
-            }
-          ],
-          "actions": []
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -656,10 +688,10 @@
               "parameters": [
                 "Button_Sign_In",
                 "Tween",
-                "\"LeftMouseClickPlay-X\"",
-                "Button_Sign_In.ScaleX()+.025",
+                "\"TweenXY1\"",
+                "Button_Sign_In.Variable(scale.x) + .025",
                 "\"linear\"",
-                ".250",
+                "50",
                 "",
                 "yes"
               ]
@@ -671,15 +703,123 @@
               "parameters": [
                 "Button_Sign_In",
                 "Tween",
-                "\"LeftMouseClickPlay-Y\"",
-                "Button_Sign_In.ScaleY()+.025",
-                "\"linear\"\n",
-                ".250",
-                "500",
+                "\"TweenXY2\"",
+                "Button_Sign_In.Variable(scale.y) + .025",
+                "\"linear\"",
+                "50",
+                "",
                 "yes"
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "if the mouse is not on the sign in button just make it smaller, don't submit the form",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Height"
+                  },
+                  "parameters": [
+                    "Button_Sign_In",
+                    ">",
+                    "40"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Button_Sign_In",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "Button_Sign_In",
+                "Tween",
+                "\"TweenXY3\"",
+                "Button_Sign_In.Variable(scale.x)\n",
+                "\"linear\"",
+                "50",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "Button_Sign_In",
+                "Tween",
+                "\"TweenXY4\"",
+                "Button_Sign_In.Variable(scale.y)",
+                "\"linear\"",
+                "50",
+                "",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "if the mouse is on the sign in button submit perform validation and submit the form",
+          "comment2": ""
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -714,6 +854,17 @@
                         "",
                         "Left"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "Button_Sign_In",
+                        "",
+                        "",
+                        ""
+                      ]
                     }
                   ]
                 },
@@ -743,10 +894,10 @@
               "parameters": [
                 "Button_Sign_In",
                 "Tween",
-                "\"LeftMouseReleasePlay-X\"",
-                "Button_Sign_In.ScaleX()-.025",
+                "\"TweenXY3\"",
+                "Button_Sign_In.Variable(scale.x)\n",
                 "\"linear\"",
-                ".250",
+                "50",
                 "",
                 "yes"
               ]
@@ -758,11 +909,11 @@
               "parameters": [
                 "Button_Sign_In",
                 "Tween",
-                "\"LeftMouseReleasePlay-Y\"",
-                "Button_Sign_In.ScaleY()-.025",
-                "\"linear\"\n",
-                ".250",
-                "500",
+                "\"TweenXY4\"",
+                "Button_Sign_In.Variable(scale.y)",
+                "\"linear\"",
+                "50",
+                "",
                 "yes"
               ]
             }
@@ -798,6 +949,12 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -815,7 +972,14 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
               "actions": [
                 {
                   "type": {
@@ -839,11 +1003,23 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Create Account Button Click Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "if the mouse is not on the create account button just make it smaller, don't submit the form",
+          "comment2": ""
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -882,10 +1058,10 @@
               "parameters": [
                 "button_Create_Account",
                 "Tween",
-                "\"LeftMouseClickPlay-X\"",
-                "button_Create_Account.ScaleX()+.025",
+                "\"LeftMouseReleasePlay-X\"",
+                "button_Create_Account.Variable(scale.x) + .025",
                 "\"linear\"",
-                ".250",
+                "50",
                 "",
                 "yes"
               ]
@@ -897,10 +1073,10 @@
               "parameters": [
                 "button_Create_Account",
                 "Tween",
-                "\"LeftMouseClickPlay-Y\"",
-                "button_Create_Account.ScaleY()+.025",
+                "\"LeftMouseReleasePlay-Y\"",
+                "button_Create_Account.Variable(scale.y) + .025",
                 "\"linear\"\n",
-                ".250",
+                "50",
                 "500",
                 "yes"
               ]
@@ -912,21 +1088,49 @@
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonReleased"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "Height"
-              },
-              "parameters": [
-                "button_Create_Account",
-                ">",
-                "40"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Height"
+                      },
+                      "parameters": [
+                        "button_Create_Account",
+                        ">",
+                        "40"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "button_Create_Account",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -944,8 +1148,110 @@
               "parameters": [
                 "button_Create_Account",
                 "Tween",
-                "\"LeftMouseReleasePlay-X\"",
-                "button_Create_Account.ScaleX()-.025",
+                "\"LeftMouseClickPlay-X\"",
+                "button_Create_Account.Variable(scale.x)",
+                "\"linear\"",
+                "50",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleYTween"
+              },
+              "parameters": [
+                "button_Create_Account",
+                "Tween",
+                "\"LeftMouseClickPlay-Y\"",
+                "button_Create_Account.Variable(scale.y)",
+                "\"linear\"\n",
+                "50",
+                "500",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "if the mouse is on the create account button submit perform validation and submit the form",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "Height"
+                      },
+                      "parameters": [
+                        "button_Create_Account",
+                        ">",
+                        "40"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MouseButtonReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SourisSurObjet"
+                      },
+                      "parameters": [
+                        "button_Create_Account",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::AddObjectScaleXTween"
+              },
+              "parameters": [
+                "button_Create_Account",
+                "Tween",
+                "\"LeftMouseClickPlay-X\"",
+                "button_Create_Account.Variable(scale.x)",
                 "\"linear\"",
                 ".250",
                 "",
@@ -959,8 +1265,8 @@
               "parameters": [
                 "button_Create_Account",
                 "Tween",
-                "\"LeftMouseReleasePlay-Y\"",
-                "button_Create_Account.ScaleY()-.025",
+                "\"LeftMouseClickPlay-Y\"",
+                "button_Create_Account.Variable(scale.y)",
                 "\"linear\"\n",
                 ".250",
                 "500",
