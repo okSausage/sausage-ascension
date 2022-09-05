@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.7048000000000005,
+    "zoomFactor": 1.2144000000000006,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -32,6 +32,7 @@
       "customSize": true,
       "height": 601,
       "layer": "",
+      "locked": true,
       "name": "LoginBox",
       "persistentUuid": "fec0a4ce-9f9e-4223-873b-2884f243aa42",
       "width": 735.4473876953125,
@@ -93,21 +94,6 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 601,
-      "layer": "",
-      "name": "LoginBox",
-      "persistentUuid": "0a07e021-951d-4700-8f5c-ef7814b88875",
-      "width": 735.4473876953125,
-      "x": 35.5526123046875,
-      "y": 1,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
       "height": 40,
       "layer": "Input layer",
       "locked": true,
@@ -142,6 +128,7 @@
       "customSize": true,
       "height": 600,
       "layer": "",
+      "locked": true,
       "name": "Background",
       "persistentUuid": "f0c373d9-7653-47e7-88c3-b06e93ef88f2",
       "width": 800,
@@ -424,6 +411,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Initialization",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1022,12 +1010,12 @@
         },
         {
           "type": {
-            "value": "VarScene"
+            "value": "VarSceneTxt"
           },
           "parameters": [
             "cbFirebase.result",
             "!=",
-            "0"
+            "\"0\""
           ]
         }
       ],
@@ -1041,6 +1029,16 @@
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
+            },
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "cbFirebase.result",
+                "!=",
+                "\"ok\""
+              ]
             }
           ],
           "actions": [
@@ -1050,7 +1048,50 @@
               },
               "parameters": [
                 "",
-                "ToString(Variable(cbFirebase.result))",
+                "VariableString(cbFirebase.result)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "cbFirebase.result",
+                "=",
+                "\"0\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "cbFirebase.result",
+                "=",
+                "\"ok\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Character Selection\"",
                 ""
               ]
             }
