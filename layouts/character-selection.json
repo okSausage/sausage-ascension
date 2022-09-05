@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": true,
-    "zoomFactor": 1.6924000000000003,
+    "zoomFactor": 1.6572,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -29,24 +29,10 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "layer": "",
-      "name": "Button_Logout",
-      "persistentUuid": "50f2c9f9-8cf3-4be0-bc9a-61e9a0b460ec",
-      "width": 0,
-      "x": 9,
-      "y": 7,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "height": 236,
       "layer": "Warlock",
+      "locked": true,
       "name": "Wiener_Warlock",
       "persistentUuid": "f8d0cba7-2a3a-451f-8ede-1b09a1a5a5f6",
       "width": 132,
@@ -94,6 +80,7 @@
       "customSize": false,
       "height": 0,
       "layer": "Wizard",
+      "locked": true,
       "name": "Text_Wizard",
       "persistentUuid": "6288c76d-fcd3-45ba-a993-9c95f12f4748",
       "width": 0,
@@ -125,6 +112,7 @@
       "customSize": true,
       "height": 232.04420471191406,
       "layer": "Wizard",
+      "locked": true,
       "name": "Wiener_Wizard",
       "persistentUuid": "53de8b59-be1c-4ee2-9790-8d6457845885",
       "width": 105,
@@ -140,6 +128,7 @@
       "customSize": true,
       "height": 100,
       "layer": "",
+      "locked": true,
       "name": "Warlock_Character_Box",
       "persistentUuid": "dccd425e-2c5a-44de-9b2e-4183072caa81",
       "width": 100,
@@ -155,6 +144,7 @@
       "customSize": true,
       "height": 100,
       "layer": "",
+      "locked": true,
       "name": "Wizard_Character_Box",
       "persistentUuid": "fc89963a-426b-4659-815d-9047a7de784d",
       "width": 100,
@@ -170,6 +160,7 @@
       "customSize": true,
       "height": 65,
       "layer": "",
+      "locked": true,
       "name": "Small_Wiener_Warlock",
       "persistentUuid": "9b070a58-11ad-49b4-8083-31152043e8ca",
       "width": 78,
@@ -185,6 +176,7 @@
       "customSize": true,
       "height": 64,
       "layer": "",
+      "locked": true,
       "name": "Small_Wiener_Wizard",
       "persistentUuid": "7af323ba-86ca-4324-b210-0f668c4bab02",
       "width": 59.71133804321289,
@@ -200,6 +192,7 @@
       "customSize": true,
       "height": 35.6129035949707,
       "layer": "",
+      "locked": true,
       "name": "Button_Choose",
       "persistentUuid": "f5bbd9ac-ad2c-4161-ac09-7c9117a80e27",
       "width": 160,
@@ -207,6 +200,26 @@
       "y": 480,
       "zOrder": 12,
       "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 45,
+      "layer": "",
+      "name": "button_exit",
+      "persistentUuid": "82e8bcda-8d60-40c7-ac5a-460d47248caf",
+      "width": 45,
+      "x": 10,
+      "y": 10,
+      "zOrder": 13,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 4
+        }
+      ],
       "stringProperties": [],
       "initialVariables": []
     }
@@ -231,27 +244,6 @@
         "b": 0,
         "g": 0,
         "r": 255
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "Button_Logout",
-      "smoothed": true,
-      "tags": "",
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Log Out",
-      "font": "",
-      "characterSize": 20,
-      "color": {
-        "b": 28,
-        "g": 231,
-        "r": 248
       }
     },
     {
@@ -729,6 +721,52 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "button_exit",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "button_exit.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -741,21 +779,6 @@
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Check if user is logged In"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Link",
-          "include": {
-            "includeConfig": 0
-          },
-          "target": "Get users current class"
-        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -784,8 +807,42 @@
                 "=",
                 "100"
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "scale.exit.x",
+                "=",
+                "button_exit.ScaleX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "scale.exit.y",
+                "=",
+                "button_exit.ScaleY()"
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Check if user is logged In"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Get users current class"
         }
       ],
       "parameters": []
@@ -795,7 +852,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Log Out Button Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -805,24 +861,60 @@
           "conditions": [
             {
               "type": {
+                "inverted": true,
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Button_Logout",
+                "button_exit",
                 "",
                 "",
                 ""
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "TextObject::SetItalic"
-              },
-              "parameters": [
-                "Button_Logout",
-                "yes"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleXTween"
+                  },
+                  "parameters": [
+                    "button_exit",
+                    "Tween",
+                    "\"exit_tween_x_down\"",
+                    "Variable(scale.exit.x)",
+                    "\"linear\"",
+                    "250",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleYTween"
+                  },
+                  "parameters": [
+                    "button_exit",
+                    "Tween",
+                    "\"exit_tween_y_down\"",
+                    "Variable(scale.exit.y)",
+                    "\"linear\"",
+                    "250",
+                    "",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -832,25 +924,59 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Button_Logout",
+                "button_exit",
                 "",
                 "",
                 ""
               ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "TextObject::SetItalic"
-              },
-              "parameters": [
-                "Button_Logout",
-                "no"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleXTween"
+                  },
+                  "parameters": [
+                    "button_exit",
+                    "Tween",
+                    "\"exit_tween_x_up\"",
+                    "Variable(scale.exit.x)+.025",
+                    "\"linear\"",
+                    "250",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleYTween"
+                  },
+                  "parameters": [
+                    "button_exit",
+                    "Tween",
+                    "\"exit_tween_y_up\"",
+                    "Variable(scale.exit.y)+.025",
+                    "\"linear\"",
+                    "250",
+                    "",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -872,7 +998,7 @@
                 "value": "SourisSurObjet"
               },
               "parameters": [
-                "Button_Logout",
+                "button_exit",
                 "",
                 "",
                 ""
@@ -906,6 +1032,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Character Box Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1552,7 +1679,18 @@
               "parameters": []
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "PopUp::Alert"
+              },
+              "parameters": [
+                "",
+                "\"I'm currently working on the sprite sheets.  If you know how to do this and want to help message me at lou@okSausage.com\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []

@@ -215,6 +215,15 @@
         "name": "button_wiener_chooser.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "button_exit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "button_exit.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
