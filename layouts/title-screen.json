@@ -228,16 +228,6 @@
       "actions": [
         {
           "type": {
-            "value": "SetGameResolutionSize"
-          },
-          "parameters": [
-            "",
-            "ScreenWidth()",
-            "ScreenHeight()"
-          ]
-        },
-        {
-          "type": {
             "value": "Cache"
           },
           "parameters": [

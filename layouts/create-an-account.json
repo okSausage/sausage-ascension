@@ -502,6 +502,13 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Check if user is logged In"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -520,16 +527,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "SetGameResolutionSize"
-              },
-              "parameters": [
-                "",
-                "ScreenWidth()",
-                "ScreenHeight()"
-              ]
-            },
             {
               "type": {
                 "value": "Opacity"
@@ -644,6 +641,7 @@
           ],
           "events": [
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -955,45 +953,6 @@
             }
           ],
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Firebase::IsSignedIn"
-                  },
-                  "parameters": []
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PopUp::Alert"
-                  },
-                  "parameters": [
-                    "",
-                    "\"This is strange.  You should not have been able to navigate to this page at all because you're already signed in.\n\nAlerting the developer and bouncing you back to the login page.\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Login\"",
-                    ""
-                  ]
-                }
-              ]
-            },
             {
               "colorB": 228,
               "colorG": 176,

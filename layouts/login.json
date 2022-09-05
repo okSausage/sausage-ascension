@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.9768000000000001,
+    "zoomFactor": 0.7048000000000005,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -45,14 +45,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 39,
+      "height": 27,
       "layer": "Input layer",
       "locked": true,
       "name": "Email",
       "persistentUuid": "1bbac9b6-9f7d-4d8c-8901-d866dd60adbc",
-      "width": 170,
-      "x": 307,
-      "y": 301,
+      "width": 143,
+      "x": 319,
+      "y": 307,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -61,14 +61,14 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 39,
+      "height": 27,
       "layer": "Input layer",
       "locked": true,
       "name": "Password",
       "persistentUuid": "4350cd9a-9714-42bd-b8db-7bcad6e085fe",
-      "width": 170,
-      "x": 306,
-      "y": 349,
+      "width": 143,
+      "x": 319,
+      "y": 355,
       "zOrder": 6,
       "numberProperties": [],
       "stringProperties": [],
@@ -95,7 +95,6 @@
       "customSize": true,
       "height": 601,
       "layer": "",
-      "locked": true,
       "name": "LoginBox",
       "persistentUuid": "0a07e021-951d-4700-8f5c-ef7814b88875",
       "width": 735.4473876953125,
@@ -210,11 +209,11 @@
         "fontResourceName": "",
         "fontSize": 16,
         "inputType": "email",
-        "textColor": "255;255;255",
+        "textColor": "185;185;185",
         "fillColor": "0;0;0",
-        "fillOpacity": 246,
+        "fillOpacity": 0,
         "borderColor": "215;179;88",
-        "borderOpacity": 255,
+        "borderOpacity": 0,
         "borderWidth": 1,
         "readOnly": false,
         "disabled": false
@@ -234,11 +233,11 @@
         "fontResourceName": "",
         "fontSize": 16,
         "inputType": "password",
-        "textColor": "255;255;255",
+        "textColor": "185;185;185",
         "fillColor": "0;0;0",
-        "fillOpacity": 246,
+        "fillOpacity": 0,
         "borderColor": "215;179;88",
-        "borderOpacity": 255,
+        "borderOpacity": 0,
         "borderWidth": 1,
         "readOnly": false,
         "disabled": false
@@ -417,15 +416,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "name": "TextEntry_Listener",
-      "tags": "",
-      "type": "TextEntryObject::TextEntry",
-      "variables": [],
-      "effects": [],
-      "behaviors": []
     }
   ],
   "events": [
@@ -459,134 +449,146 @@
           "actions": [
             {
               "type": {
-                "value": "SetGameResolutionSize"
+                "value": "SetSceneVariableAsBoolean"
               },
               "parameters": [
-                "",
-                "ScreenWidth()",
-                "ScreenHeight()"
-              ]
-            },
-            {
-              "type": {
-                "value": "Firebase::AnalyticsEnable"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "Firebase::EnablePerformance"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Background Mountains\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"Input layer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "HideLayer"
-              },
-              "parameters": [
-                "",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Opacity"
-              },
-              "parameters": [
-                "Background",
-                "=",
-                "100"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Button_Sign_In",
-                "scale.x",
-                "=",
-                "Button_Sign_In.ScaleX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Button_Sign_In",
-                "scale.y",
-                "=",
-                "Button_Sign_In.ScaleY()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "button_Create_Account",
-                "scale.x",
-                "=",
-                "Button_Sign_In.ScaleX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "button_Create_Account",
-                "scale.y",
-                "=",
-                "Button_Sign_In.ScaleY()"
+                "isLoginScene",
+                "True"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Check if user is logged In"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Opacity"
+                  },
+                  "parameters": [
+                    "Background",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Button_Sign_In",
+                    "scale.x",
+                    "=",
+                    "Button_Sign_In.ScaleX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Button_Sign_In",
+                    "scale.y",
+                    "=",
+                    "Button_Sign_In.ScaleY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "button_Create_Account",
+                    "scale.x",
+                    "=",
+                    "Button_Sign_In.ScaleX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "button_Create_Account",
+                    "scale.y",
+                    "=",
+                    "Button_Sign_In.ScaleY()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": []
+            }
           ]
-        },
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Text Input Click Events",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "Firebase::IsSignedIn"
+                "value": "TextInput::TextInputObject::Focused"
               },
-              "parameters": []
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
+              "parameters": [
+                "Email"
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Scene"
+                "value": "TextInput::TextInputObject::SetPlaceholder"
               },
               "parameters": [
-                "",
-                "\"Character Selection\"",
-                "yes"
+                "Email",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::SetTextColor"
+              },
+              "parameters": [
+                "Email",
+                "\"185;185;185\""
               ]
             }
           ]
@@ -597,43 +599,112 @@
             {
               "type": {
                 "inverted": true,
-                "value": "Firebase::IsSignedIn"
+                "value": "TextInput::TextInputObject::Focused"
               },
-              "parameters": []
+              "parameters": [
+                "Email"
+              ]
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
+                "value": "TextInput::TextInputObject::Text"
               },
-              "parameters": []
+              "parameters": [
+                "Email",
+                "=",
+                "\"\""
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ShowLayer"
+                "value": "TextInput::TextInputObject::SetPlaceholder"
               },
               "parameters": [
-                "",
-                "\"Background Mountains\""
+                "Email",
+                "=",
+                "\"Email\""
               ]
             },
             {
               "type": {
-                "value": "ShowLayer"
+                "value": "TextInput::TextInputObject::SetTextColor"
               },
               "parameters": [
-                "",
-                "\"\""
+                "Email",
+                "\"185;185;185\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TextInput::TextInputObject::Focused"
+              },
+              "parameters": [
+                "Email"
               ]
             },
             {
               "type": {
-                "value": "ShowLayer"
+                "inverted": true,
+                "value": "InputValidation::IsValidEmail"
               },
               "parameters": [
-                "",
-                "\"Input layer\""
+                "Email",
+                "Email.Text()",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::SetTextColor"
+              },
+              "parameters": [
+                "Email",
+                "\"208;2;27\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "TextInput::TextInputObject::Focused"
+              },
+              "parameters": [
+                "Email"
+              ]
+            },
+            {
+              "type": {
+                "value": "InputValidation::IsValidEmail"
+              },
+              "parameters": [
+                "Email",
+                "Email.Text()",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::SetTextColor"
+              },
+              "parameters": [
+                "Email",
+                "\"126;211;33\""
               ]
             }
           ]
@@ -646,10 +717,23 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Sign In Button Click Events",
+      "name": "Sign In Button",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "button tweening",
+          "comment2": ""
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -672,15 +756,18 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "TextInput::TextInputObject::SetBorderColor"
+              },
+              "parameters": [
+                "Email",
+                "\"215;179;88\""
+              ]
+            },
             {
               "type": {
                 "value": "Tween::AddObjectScaleXTween"
@@ -723,7 +810,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "if the mouse is not on the sign in button just make it smaller, don't submit the form",
+          "comment": "click events",
           "comment2": ""
         },
         {
@@ -731,159 +818,22 @@
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::And"
+                "value": "MouseButtonReleased"
               },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "Height"
-                  },
-                  "parameters": [
-                    "Button_Sign_In",
-                    ">",
-                    "40"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MouseButtonReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
-                  },
-                  "parameters": [
-                    "Button_Sign_In",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
+              "parameters": [
+                "",
+                "Left"
               ]
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::AddObjectScaleXTween"
+                "value": "ScaleHeight"
               },
               "parameters": [
                 "Button_Sign_In",
-                "Tween",
-                "\"TweenXY3\"",
-                "Button_Sign_In.Variable(scale.x)\n",
-                "\"linear\"",
-                "50",
-                "",
-                "yes"
+                ">",
+                "Variable(scale.y)"
               ]
-            },
-            {
-              "type": {
-                "value": "Tween::AddObjectScaleYTween"
-              },
-              "parameters": [
-                "Button_Sign_In",
-                "Tween",
-                "\"TweenXY4\"",
-                "Button_Sign_In.Variable(scale.y)",
-                "\"linear\"",
-                "50",
-                "",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "if the mouse is on the sign in button submit perform validation and submit the form",
-          "comment2": ""
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "Height"
-                      },
-                      "parameters": [
-                        "Button_Sign_In",
-                        ">",
-                        "40"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "MouseButtonReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SourisSurObjet"
-                      },
-                      "parameters": [
-                        "Button_Sign_In",
-                        "",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "KeyPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Return"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
@@ -924,22 +874,40 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "BuiltinCommonInstructions::Once"
                   },
-                  "parameters": [],
-                  "subInstructions": [
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Button_Sign_In",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
-                        "value": "TextInput::TextInputObject::Text"
+                        "value": "InputValidation::IsValidEmail"
                       },
                       "parameters": [
-                        "Password",
-                        "=",
-                        "\"\""
+                        "",
+                        "Email.Text()",
+                        ""
                       ]
                     },
                     {
                       "type": {
+                        "inverted": true,
                         "value": "TextInput::TextInputObject::Text"
                       },
                       "parameters": [
@@ -948,47 +916,89 @@
                         "\"\""
                       ]
                     }
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PopUp::Alert"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Email and/or password is blank.  You must sign in to play the game.  How else would we store your progress?\"",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Firebase::BasicAccountSignIn"
-                  },
-                  "parameters": [
-                    "Email.Text()",
-                    "Password.Text()",
-                    "result"
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Firebase::BasicAccountSignIn"
+                      },
+                      "parameters": [
+                        "Email.Text()",
+                        "Password.Text()",
+                        "cbFirebase.result"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Callback handler: dbResult",
+                      "comment2": ""
+                    },
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "dbResult",
+                            "=",
+                            "\"ok\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PopUp::Alert"
+                          },
+                          "parameters": [
+                            "",
+                            "VariableString(dbResult)",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "dbResult",
+                            "!=",
+                            "\"ok\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PopUp::Alert"
+                          },
+                          "parameters": [
+                            "",
+                            "VariableString(dbResult)",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -999,10 +1009,61 @@
       "parameters": []
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "VariableChildExists"
+          },
+          "parameters": [
+            "cbFirebase",
+            "\"result\""
+          ]
+        },
+        {
+          "type": {
+            "value": "VarScene"
+          },
+          "parameters": [
+            "cbFirebase.result",
+            "!=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PopUp::Alert"
+              },
+              "parameters": [
+                "",
+                "ToString(Variable(cbFirebase.result))",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Create Account Button Click Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
