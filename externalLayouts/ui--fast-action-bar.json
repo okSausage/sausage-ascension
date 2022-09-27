@@ -1,0 +1,34 @@
+{
+  "associatedLayout": "Untitled scene",
+  "name": "UI :: Fast Action Bar",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "layer": "",
+      "name": "fast_action_bar",
+      "persistentUuid": "34390910-357c-443d-8611-fef7f850104b",
+      "width": 0,
+      "x": 160,
+      "y": 512,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 1,
+    "windowMask": false
+  }
+}

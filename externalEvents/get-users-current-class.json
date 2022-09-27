@@ -32,129 +32,272 @@
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
-        },
-        {
-          "type": {
-            "value": "VarGlobalTxt"
-          },
-          "parameters": [
-            "user.class",
-            "=",
-            "\"\""
-          ]
         }
       ],
       "actions": [
         {
           "type": {
-            "value": "Firebase::DatabaseGetVariable"
+            "value": "Firebase::DatabaseHasVariable"
           },
           "parameters": [
             "\"/character/class\"",
-            "user.class",
-            "db.result"
+            "cbFirebase.class.exists",
+            "cbFirebase.class.exists.result"
           ]
         }
       ],
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "VarGlobalTxt"
-              },
-              "parameters": [
-                "db.result",
-                "!=",
-                "\"ok\""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "SceneVariableAsBoolean"
-              },
-              "parameters": [
-                "sceneCharacterSelection",
-                "True"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "DebuggerTools::ConsoleLog"
-              },
-              "parameters": [
-                "\"Error: User class could not be loaded.\"",
-                "\"error\"",
-                "\"Application\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PopUp::Alert"
-              },
-              "parameters": [
-                "",
-                "\"Critical Error Occured!  The application could not pull your class from the database.\"",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Quit"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ]
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "an error occured querying from firebase",
+          "comment2": ""
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "VarGlobalTxt"
+                "value": "VariableChildExists"
               },
               "parameters": [
-                "db.result",
-                "=",
-                "\"ok\""
+                "cbFirebase.class.exists",
+                "\"result\""
               ]
             },
             {
               "type": {
-                "inverted": true,
-                "value": "SceneVariableAsBoolean"
+                "value": "VarSceneTxt"
               },
               "parameters": [
-                "sceneCharacterSelection",
-                "True"
+                "cbFirebase.class.exists.result",
+                "!=",
+                "\"0\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "cbFirebase.class.exists.result",
+                    "!=",
+                    "\"ok\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopUp::Alert"
+                  },
+                  "parameters": [
+                    "",
+                    "VariableString(cbFirebase.class.exists.result)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "cbFirebase.class.exists.result",
+                    "=",
+                    "\"0\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "connection to firebase is ok, continue\nif no class was found do the following:",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "character.class",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "cb_firebase_class_exists_result",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "cb_firebase_class_exists",
+                    "=",
+                    "1"
+                  ]
+                }
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "ModVarGlobal"
+                "value": "Firebase::DatabaseGetVariable"
               },
               "parameters": [
+                "\"/character/class\"",
                 "user.class",
-                "=",
-                "Variable(user.class)"
+                "db.result"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "db.result",
+                    "!=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "sceneCharacterSelection",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"Error: User class could not be loaded.\"",
+                    "\"error\"",
+                    "\"Application\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PopUp::Alert"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Critical Error Occured!  The application could not pull your class from the database.\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "DebuggerTools::ConsoleLog"
-              },
-              "parameters": [
-                "\"INFO: Global variable set: user.class=\" + GlobalVariableString(user.class)",
-                "\"info\"",
-                "\"Application\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "db.result",
+                    "=",
+                    "\"ok\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "sceneCharacterSelection",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "user.class",
+                    "=",
+                    "Variable(user.class)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"INFO: Global variable set: user.class=\" + GlobalVariableString(user.class)",
+                    "\"info\"",
+                    "\"Application\""
+                  ]
+                }
               ]
             }
           ]

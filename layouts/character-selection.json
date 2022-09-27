@@ -775,6 +775,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Initialization Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -827,6 +828,26 @@
                 "=",
                 "button_exit.ScaleY()"
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "scale.wiener_chooser.x",
+                "=",
+                "Button_Choose.ScaleX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "scale.wiener_chooser.y",
+                "=",
+                "Button_Choose.ScaleY()"
+              ]
             }
           ]
         },
@@ -852,6 +873,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Log Out Button Events",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1514,69 +1536,6 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Button_Choose",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonPressed"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::AddObjectScaleYTween"
-              },
-              "parameters": [
-                "Button_Choose",
-                "Tween",
-                "\"MouseOverChoose-Y\"",
-                "Button_Choose.ScaleY()+.025",
-                "\"linear\"\n",
-                ".250",
-                "500",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::AddObjectScaleXTween"
-              },
-              "parameters": [
-                "Button_Choose",
-                "Tween",
-                "\"MouseOverChoose-X\"",
-                "Button_Choose.ScaleX()+.025",
-                "\"linear\"",
-                ".250",
-                "",
-                "yes"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "inverted": true,
                 "value": "SourisSurObjet"
               },
@@ -1586,81 +1545,58 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "Tween::AddObjectScaleXTween"
-              },
-              "parameters": [
-                "Button_Choose",
-                "Tween",
-                "\"MouseOverChoose-X\"",
-                "Button_Choose.ScaleX()-.025",
-                "\"linear\"",
-                ".250",
-                "",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::AddObjectScaleYTween"
-              },
-              "parameters": [
-                "Button_Choose",
-                "Tween",
-                "\"MouseOverChoose-Y\"",
-                "Button_Choose.ScaleY()-.025",
-                "\"linear\"\n",
-                ".250",
-                "500",
-                "yes"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleXTween"
+                  },
+                  "parameters": [
+                    "Button_Choose",
+                    "Tween",
+                    "\"MouseOverChoose-X\"",
+                    "Button_Choose.ScaleX()-.025",
+                    "\"linear\"",
+                    ".250",
+                    "",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleYTween"
+                  },
+                  "parameters": [
+                    "Button_Choose",
+                    "Tween",
+                    "\"MouseOverChoose-Y\"",
+                    "Button_Choose.ScaleY()-.025",
+                    "\"linear\"\n",
+                    ".250",
+                    "500",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Wiener chosen, save and move on",
-          "comment2": ""
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonReleased"
-              },
-              "parameters": [
-                "",
-                "Left"
-              ]
-            },
             {
               "type": {
                 "value": "SourisSurObjet"
@@ -1671,23 +1607,96 @@
                 "",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "PopUp::Alert"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleYTween"
+                  },
+                  "parameters": [
+                    "Button_Choose",
+                    "Tween",
+                    "\"MouseOverChoose-Y\"",
+                    "Button_Choose.ScaleY()+.025",
+                    "\"linear\"\n",
+                    ".250",
+                    "500",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectScaleXTween"
+                  },
+                  "parameters": [
+                    "Button_Choose",
+                    "Tween",
+                    "\"MouseOverChoose-X\"",
+                    "Button_Choose.ScaleX()+.025",
+                    "\"linear\"",
+                    ".250",
+                    "",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "",
-                "\"I'm currently working on the sprite sheets.  If you know how to do this and want to help message me at lou@okSausage.com\"",
-                ""
+              "comment": "Wiener chosen, save and move on",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopUp::Alert"
+                  },
+                  "parameters": [
+                    "",
+                    "\"I'm currently working on the sprite sheets.  If you know how to do this and want to help message me at lou@okSausage.com\"",
+                    ""
+                  ]
+                }
               ]
             }
           ]
